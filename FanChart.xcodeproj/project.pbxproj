@@ -17,7 +17,7 @@
 		8915CC221CBB6B0300587A6A /* FanChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC211CBB6B0300587A6A /* FanChartUITests.swift */; };
 		8915CC311CBB6C7600587A6A /* FanChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC301CBB6C7600587A6A /* FanChartView.swift */; };
 		8915CC331CBB6CB300587A6A /* DrawRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC321CBB6CB300587A6A /* DrawRegion.swift */; };
-		8915CC351CBB6D2B00587A6A /* DrawMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC341CBB6D2B00587A6A /* DrawMethod.swift */; };
+		8915CC371CBBA3D100587A6A /* LineRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC361CBBA3D100587A6A /* LineRender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		8915CC231CBB6B0300587A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8915CC301CBB6C7600587A6A /* FanChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FanChartView.swift; path = chart/FanChartView.swift; sourceTree = "<group>"; };
 		8915CC321CBB6CB300587A6A /* DrawRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawRegion.swift; path = chart/DrawRegion.swift; sourceTree = "<group>"; };
-		8915CC341CBB6D2B00587A6A /* DrawMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawMethod.swift; path = chart/DrawMethod.swift; sourceTree = "<group>"; };
+		8915CC361CBBA3D100587A6A /* LineRender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineRender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +140,7 @@
 			children = (
 				8915CC301CBB6C7600587A6A /* FanChartView.swift */,
 				8915CC321CBB6CB300587A6A /* DrawRegion.swift */,
-				8915CC341CBB6D2B00587A6A /* DrawMethod.swift */,
+				8915CC361CBBA3D100587A6A /* LineRender.swift */,
 			);
 			name = chart;
 			sourceTree = "<group>";
@@ -278,10 +278,10 @@
 			files = (
 				8915CC331CBB6CB300587A6A /* DrawRegion.swift in Sources */,
 				8915CC011CBB6B0300587A6A /* ViewController.swift in Sources */,
-				8915CC351CBB6D2B00587A6A /* DrawMethod.swift in Sources */,
 				8915CBFF1CBB6B0300587A6A /* AppDelegate.swift in Sources */,
 				8915CC071CBB6B0300587A6A /* FanChart.xcdatamodeld in Sources */,
 				8915CC311CBB6C7600587A6A /* FanChartView.swift in Sources */,
+				8915CC371CBBA3D100587A6A /* LineRender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +424,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FanChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.fantaros.github.FanChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,6 +436,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FanChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.fantaros.github.FanChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
