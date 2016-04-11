@@ -15,6 +15,9 @@
 		8915CC0C1CBB6B0300587A6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8915CC0A1CBB6B0300587A6A /* LaunchScreen.storyboard */; };
 		8915CC171CBB6B0300587A6A /* FanChartTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC161CBB6B0300587A6A /* FanChartTests.swift */; };
 		8915CC221CBB6B0300587A6A /* FanChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC211CBB6B0300587A6A /* FanChartUITests.swift */; };
+		8915CC311CBB6C7600587A6A /* FanChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC301CBB6C7600587A6A /* FanChartView.swift */; };
+		8915CC331CBB6CB300587A6A /* DrawRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC321CBB6CB300587A6A /* DrawRegion.swift */; };
+		8915CC351CBB6D2B00587A6A /* DrawMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC341CBB6D2B00587A6A /* DrawMethod.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		8915CC1D1CBB6B0300587A6A /* FanChartUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FanChartUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8915CC211CBB6B0300587A6A /* FanChartUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FanChartUITests.swift; sourceTree = "<group>"; };
 		8915CC231CBB6B0300587A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8915CC301CBB6C7600587A6A /* FanChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FanChartView.swift; path = chart/FanChartView.swift; sourceTree = "<group>"; };
+		8915CC321CBB6CB300587A6A /* DrawRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawRegion.swift; path = chart/DrawRegion.swift; sourceTree = "<group>"; };
+		8915CC341CBB6D2B00587A6A /* DrawMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawMethod.swift; path = chart/DrawMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		8915CBFD1CBB6B0300587A6A /* FanChart */ = {
 			isa = PBXGroup;
 			children = (
+				8915CC2F1CBB6C4100587A6A /* chart */,
 				8915CBFE1CBB6B0300587A6A /* AppDelegate.swift */,
 				8915CC001CBB6B0300587A6A /* ViewController.swift */,
 				8915CC021CBB6B0300587A6A /* Main.storyboard */,
@@ -126,6 +133,16 @@
 				8915CC231CBB6B0300587A6A /* Info.plist */,
 			);
 			path = FanChartUITests;
+			sourceTree = "<group>";
+		};
+		8915CC2F1CBB6C4100587A6A /* chart */ = {
+			isa = PBXGroup;
+			children = (
+				8915CC301CBB6C7600587A6A /* FanChartView.swift */,
+				8915CC321CBB6CB300587A6A /* DrawRegion.swift */,
+				8915CC341CBB6D2B00587A6A /* DrawMethod.swift */,
+			);
+			name = chart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +276,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8915CC331CBB6CB300587A6A /* DrawRegion.swift in Sources */,
 				8915CC011CBB6B0300587A6A /* ViewController.swift in Sources */,
+				8915CC351CBB6D2B00587A6A /* DrawMethod.swift in Sources */,
 				8915CBFF1CBB6B0300587A6A /* AppDelegate.swift in Sources */,
 				8915CC071CBB6B0300587A6A /* FanChart.xcdatamodeld in Sources */,
+				8915CC311CBB6C7600587A6A /* FanChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +508,7 @@
 				8915CC281CBB6B0300587A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8915CC291CBB6B0300587A6A /* Build configuration list for PBXNativeTarget "FanChartTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +517,7 @@
 				8915CC2B1CBB6B0300587A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8915CC2C1CBB6B0300587A6A /* Build configuration list for PBXNativeTarget "FanChartUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +526,7 @@
 				8915CC2E1CBB6B0300587A6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
