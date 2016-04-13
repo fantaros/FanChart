@@ -29,7 +29,7 @@ class BaseRenderRegion  : RenderRegion {
     unowned var parentView : UIView
     
     init (parent : UIView, frame : CGRect) {
-        self.parentView = parent;
+        self.parentView = parent
     }
     
     func render(context: CGContextRef?, data : [AnyObject]?) {

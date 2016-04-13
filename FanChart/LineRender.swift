@@ -99,18 +99,18 @@ class LineChartRender  : BaseRenderRegion {
             path.moveToPoint(CGPointMake(startX!, self.y + self.height))
             path.addLineToPoint(CGPointMake(currentX!, currentY!))
             
-            index++;
-            cmodel = nil;
+            index++
+            cmodel = nil
             for ; index < UInt((data?.count)!); index++ {
                 currentX = self.x + CGFloat(index) * gap
                 cmodel = data![Int(index)] as? [String : String]
                 let price : Double = Double(cmodel!["close"]!)!
-                if (self.maxAbs == 0) {
+                if self.maxAbs == 0 {
                     currentY = self.y + 0.5 * self.height;
                 }else{
                     currentY = self.y + CGFloat(self.middlePrice! + self.maxAbs! - price) / CGFloat(2 * self.maxAbs!) * (self.height)
                 }
-                if (price > maxPrice) {
+                if price > maxPrice {
                     maxX = currentX
                     maxY = currentY
                     maxPrice = price
@@ -126,7 +126,7 @@ class LineChartRender  : BaseRenderRegion {
             
             // 恢复我们保存的绘画状态
             CGContextRestoreGState(context)
-            //            CGGradientRelease(gradient);
+//            CGGradientRelease(gradient);
             
             CGContextSetStrokeColorWithColor(context, self.outerLineColor.CGColor)
             CGContextSetFillColorWithColor(context, self.outerLineColor.CGColor)
@@ -164,9 +164,9 @@ class LineChartRender  : BaseRenderRegion {
                 }
                 path.addLineToPoint(CGPointMake(currentX!, currentY!))
             }
-            CGContextStrokePath(context);
+            CGContextStrokePath(context)
             // 恢复我们保存的绘画状态
-            CGContextRestoreGState(context);
+            CGContextRestoreGState(context)
             
         }
     }
