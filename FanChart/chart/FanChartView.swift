@@ -13,10 +13,10 @@ class FanChartView: UIView {
     var defaultData : [[String : String]] = [[String : String]]()
     
     override init(frame: CGRect) {
-                super.init(frame: frame)
+        super.init(frame: frame)
         render = LineChartRender(parent: self, frame: frame);
-        for var i : Int = 0; i < 100; i++ {
-            defaultData.append(["close" : String(Double(arc4random_uniform(60) + 20))])
+        for _ in 0..<100 {
+            self.defaultData.append(["close" : String(Double(arc4random_uniform(10) + 45))])
         }
     }
 

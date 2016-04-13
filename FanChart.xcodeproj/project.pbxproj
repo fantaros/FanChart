@@ -17,7 +17,7 @@
 		8915CC221CBB6B0300587A6A /* FanChartUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC211CBB6B0300587A6A /* FanChartUITests.swift */; };
 		8915CC311CBB6C7600587A6A /* FanChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC301CBB6C7600587A6A /* FanChartView.swift */; };
 		8915CC331CBB6CB300587A6A /* DrawRegion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC321CBB6CB300587A6A /* DrawRegion.swift */; };
-		8915CC371CBBA3D100587A6A /* LineRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8915CC361CBBA3D100587A6A /* LineRender.swift */; };
+		89FFAD2C1CBE056600566773 /* LineRender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FFAD2B1CBE056600566773 /* LineRender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,7 @@
 		8915CC231CBB6B0300587A6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8915CC301CBB6C7600587A6A /* FanChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FanChartView.swift; path = chart/FanChartView.swift; sourceTree = "<group>"; };
 		8915CC321CBB6CB300587A6A /* DrawRegion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DrawRegion.swift; path = chart/DrawRegion.swift; sourceTree = "<group>"; };
-		8915CC361CBBA3D100587A6A /* LineRender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineRender.swift; sourceTree = "<group>"; };
+		89FFAD2B1CBE056600566773 /* LineRender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineRender.swift; path = chart/LineRender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +138,9 @@
 		8915CC2F1CBB6C4100587A6A /* chart */ = {
 			isa = PBXGroup;
 			children = (
+				89FFAD2B1CBE056600566773 /* LineRender.swift */,
 				8915CC301CBB6C7600587A6A /* FanChartView.swift */,
 				8915CC321CBB6CB300587A6A /* DrawRegion.swift */,
-				8915CC361CBBA3D100587A6A /* LineRender.swift */,
 			);
 			name = chart;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 				8915CBFF1CBB6B0300587A6A /* AppDelegate.swift in Sources */,
 				8915CC071CBB6B0300587A6A /* FanChart.xcdatamodeld in Sources */,
 				8915CC311CBB6C7600587A6A /* FanChartView.swift in Sources */,
-				8915CC371CBBA3D100587A6A /* LineRender.swift in Sources */,
+				89FFAD2C1CBE056600566773 /* LineRender.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
