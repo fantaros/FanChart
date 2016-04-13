@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class LineChartRender  : BaseRenderRegion {
+class LineChartRender : BaseRenderRegion {
     static let defaultOuterLineColor : UIColor = UIColor.blackColor()
     static let defaultLineColor : UIColor = UIColor.blueColor()
     static let defaultBorderColor : UIColor = UIColor.lightGrayColor()
@@ -101,7 +101,7 @@ class LineChartRender  : BaseRenderRegion {
             
             index += 1
             cmodel = nil
-            for ; index < UInt((data?.count)!); index += 1 {
+            for index in 0..<UInt((data?.count)!) {
                 currentX = self.x + CGFloat(index) * gap
                 cmodel = data![Int(index)] as? [String : String]
                 let price : Double = Double(cmodel!["close"]!)!
@@ -150,7 +150,7 @@ class LineChartRender  : BaseRenderRegion {
             CGContextMoveToPoint(context, currentX!, currentY!)
             index += 1;
             cmodel = nil;
-            for ; index < UInt((data?.count)!); index += 1 {
+            for index in 0..<UInt((data?.count)!) {
                 currentX = self.x + CGFloat(index) * gap
                 cmodel = data![Int(index)] as? [String : String]
                 let price : Double = Double(cmodel!["close"]!)!
