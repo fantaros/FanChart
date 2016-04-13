@@ -91,7 +91,7 @@ class LineChartRender  : BaseRenderRegion {
             
             startX = currentX;
 //            startY = currentY;
-            index++;
+            index += 1
             CGContextSaveGState(context)
             CGContextBeginPath(context)
             var cmodel : [String : String]?
@@ -99,9 +99,9 @@ class LineChartRender  : BaseRenderRegion {
             path.moveToPoint(CGPointMake(startX!, self.y + self.height))
             path.addLineToPoint(CGPointMake(currentX!, currentY!))
             
-            index++
+            index += 1
             cmodel = nil
-            for ; index < UInt((data?.count)!); index++ {
+            for ; index < UInt((data?.count)!); index += 1 {
                 currentX = self.x + CGFloat(index) * gap
                 cmodel = data![Int(index)] as? [String : String]
                 let price : Double = Double(cmodel!["close"]!)!
@@ -148,9 +148,9 @@ class LineChartRender  : BaseRenderRegion {
                 }
             }
             CGContextMoveToPoint(context, currentX!, currentY!)
-            index++;
+            index += 1;
             cmodel = nil;
-            for ; index < UInt((data?.count)!); index++ {
+            for ; index < UInt((data?.count)!); index += 1 {
                 currentX = self.x + CGFloat(index) * gap
                 cmodel = data![Int(index)] as? [String : String]
                 let price : Double = Double(cmodel!["close"]!)!
